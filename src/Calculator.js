@@ -4,11 +4,11 @@ import TemperatureInput from './TemperatureInput';
 import BoilingVerdict from './BoilingVerdict';
 
 /*BOLEH BENTUK BEGINI*/
-// import {toCelsius, toFahrenheit, tryConvert} from './helpers';
+import * as helpersObj from './helpers';
+const {toCelsius,toFahrenheit,tryConvert} = helpersObj;
 
 /*ATAU BENTUK BEGINI*/
-import * as helpers from './helpers';
-const {toCelsius,toFahrenheit,tryConvert} = helpers;
+// import {toCelsius, toFahrenheit, tryConvert} from './helpers';
 
 class Calculator extends React.Component {
   constructor(props) {
