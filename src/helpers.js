@@ -1,3 +1,8 @@
+/*
+  TIDAK ADA DEFAULT EXPORT,
+  EXPORT MASING-MASING FUNCTION
+*/
+
 export function toCelsius(fahrenheit) {
   return (fahrenheit - 32) * 5 / 9;
 }
@@ -15,3 +20,10 @@ export function tryConvert(temperature, convert) {
   const rounded = Math.round(output * 1000) / 1000;
   return rounded.toString();
 }
+
+/*
+  SEBENARNYA FUNGSI2 INI YG PAKAI HANYA KOMPONEN KALKULATOR,
+  NAMUN KEUNGGULANNYA DIPISAH SEBAGAI HELPER ADALAH
+  LEBIH MODULAR SEHINGGA BISA DIGUNAKAN DI BERBAGAI KOMPONEN LAIN
+  TINGGAL IMPORT SAJA DI FILE/KOMPONEN YG MEMBUTUHKAN
+*/
